@@ -1,0 +1,5 @@
+vhdl work "DIV2_1.vhd"
+vhdl work "DIV20M_10K.vhd"
+vhdl work "DIV10K_1000.vhd"
+vhdl work "DIV1000_2.vhd"
+vhdl work "Input_Handler.vhd"

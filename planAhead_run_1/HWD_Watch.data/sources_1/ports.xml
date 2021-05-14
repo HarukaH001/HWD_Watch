@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="SEG_p30334344">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="DATA_a41b40c35d34f29g27">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK_pb123" Dir="IN"/>
+		<Port Id="SNOOZE_pb1_p45" Dir="IN"/>
+		<Port Id="ALARM_pb3_p47" Dir="IN"/>
+		<Port Id="H_pb4_p48" Dir="IN"/>
+		<Port Id="M_pb5_p51" Dir="IN"/>
+		<Port Id="S_pb6_p55" Dir="IN"/>
+		<Port Id="DOT_p26" Dir="OUT"/>
+		<Port Id="BUZZER_p83" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

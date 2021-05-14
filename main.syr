@@ -1,0 +1,1582 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_U.vhd" into library work
+Parsing entity <Counter_0_9_U>.
+Parsing architecture <Behavioral> of entity <counter_0_9_u>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_4.vhd" into library work
+Parsing entity <Counter_0_4>.
+Parsing architecture <Behavioral> of entity <counter_0_4>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\MUX4BIT_4_1.vhd" into library work
+Parsing entity <MUX4BIT_4_1>.
+Parsing architecture <Behavioral> of entity <mux4bit_4_1>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\MUX4BIT_2_1.vhd" into library work
+Parsing entity <MUX4BIT_2_1>.
+Parsing architecture <Behavioral> of entity <mux4bit_2_1>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV2_1.vhd" into library work
+Parsing entity <DIV2_1>.
+Parsing architecture <Behavioral> of entity <div2_1>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV20M_10K.vhd" into library work
+Parsing entity <DIV20M_10K>.
+Parsing architecture <Behavioral> of entity <div20m_10k>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV10K_1000.vhd" into library work
+Parsing entity <DIV10K_1000>.
+Parsing architecture <Behavioral> of entity <div10k_1000>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV1000_2.vhd" into library work
+Parsing entity <DIV1000_2>.
+Parsing architecture <Behavioral> of entity <div1000_2>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_UR.vhd" into library work
+Parsing entity <Counter_0_9_UR>.
+Parsing architecture <Behavioral> of entity <counter_0_9_ur>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_U5.vhd" into library work
+Parsing entity <Counter_0_9_U5>.
+Parsing architecture <Behavioral> of entity <counter_0_9_u5>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5_R.vhd" into library work
+Parsing entity <Counter_0_5_R>.
+Parsing architecture <Behavioral> of entity <counter_0_5_r>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" into library work
+Parsing entity <Counter_0_5>.
+Parsing architecture <Behavioral> of entity <counter_0_5>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_2_R.vhd" into library work
+Parsing entity <Counter_0_2_R>.
+Parsing architecture <Behavioral> of entity <counter_0_2_r>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter0_9_R.vhd" into library work
+Parsing entity <Counter_0_9_R>.
+Parsing architecture <Behavioral> of entity <counter_0_9_r>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter0_3.vhd" into library work
+Parsing entity <Counter0_3>.
+Parsing architecture <Behavioral> of entity <counter0_3>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Comparator_4Bit.vhd" into library work
+Parsing entity <Comparator_4Bit>.
+Parsing architecture <Behavioral> of entity <comparator_4bit>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\BCD_4_7Segment.vhd" into library work
+Parsing entity <BCD_4_7Segment>.
+Parsing architecture <Behavioral> of entity <bcd_4_7segment>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\BCD_2_4_Selector.vhd" into library work
+Parsing entity <BCD_2_4_Selector>.
+Parsing architecture <Behavioral> of entity <bcd_2_4_selector>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Watch_Driver.vhd" into library work
+Parsing entity <Watch_Driver>.
+Parsing architecture <Behavioral> of entity <watch_driver>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Segment_Driver.vhd" into library work
+Parsing entity <Segment_Driver>.
+Parsing architecture <Behavioral> of entity <segment_driver>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Input_Handler.vhd" into library work
+Parsing entity <Input_Handler>.
+Parsing architecture <Behavioral> of entity <input_handler>.
+Parsing VHDL file "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\main.vhd" into library work
+Parsing entity <main>.
+Parsing architecture <Behavioral> of entity <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <main> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Input_Handler> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DIV20M_10K> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DIV10K_1000> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DIV1000_2> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DIV2_1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Watch_Driver> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_9_R> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_5_R> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_9_U> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:439 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Watch_Driver.vhd" Line 91: Formal port c of mode inout cannot be associated with actual port c of mode out
+INFO:HDLCompiler:1408 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" Line 36. c is declared here
+
+Elaborating entity <Counter_0_5> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" Line 53: c should be on the sensitivity list of the process
+INFO:HDLCompiler:1408 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" Line 36. c is declared here
+
+Elaborating entity <Counter_0_9_UR> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_2_R> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Comparator_4Bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_9_U5> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_4> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:1408 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" Line 36. c is declared here
+INFO:HDLCompiler:1408 - "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd" Line 36. c is declared here
+
+Elaborating entity <MUX4BIT_2_1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Segment_Driver> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <MUX4BIT_4_1> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_4_7Segment> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter0_3> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <BCD_2_4_Selector> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\main.vhd".
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <Input_Handler>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Input_Handler.vhd".
+    Summary:
+	no macro.
+Unit <Input_Handler> synthesized.
+
+Synthesizing Unit <DIV20M_10K>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV20M_10K.vhd".
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_5_o_add_0_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <DIV20M_10K> synthesized.
+
+Synthesizing Unit <DIV10K_1000>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV10K_1000.vhd".
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_6_o_add_0_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <DIV10K_1000> synthesized.
+
+Synthesizing Unit <DIV1000_2>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV1000_2.vhd".
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_7_o_add_0_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <DIV1000_2> synthesized.
+
+Synthesizing Unit <DIV2_1>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\DIV2_1.vhd".
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_8_o_add_0_OUT> created at line 46.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <DIV2_1> synthesized.
+
+Synthesizing Unit <Watch_Driver>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Watch_Driver.vhd".
+    Summary:
+	no macro.
+Unit <Watch_Driver> synthesized.
+
+Synthesizing Unit <Counter_0_9_R>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter0_9_R.vhd".
+    Found 1-bit register for signal <C>.
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_11_o_add_1_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_0_9_R> synthesized.
+
+Synthesizing Unit <Counter_0_5_R>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5_R.vhd".
+    Found 1-bit register for signal <C>.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit adder for signal <counter[2]_GND_12_o_add_1_OUT> created at line 54.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_0_5_R> synthesized.
+
+Synthesizing Unit <Counter_0_9_U>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_U.vhd".
+    Found 4-bit register for signal <counter>.
+    Found 1-bit register for signal <C>.
+    Found 4-bit adder for signal <counter[3]_GND_13_o_add_1_OUT> created at line 53.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <Counter_0_9_U> synthesized.
+
+Synthesizing Unit <Counter_0_5>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_5.vhd".
+    Found 1-bit register for signal <C>.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit adder for signal <counter[2]_GND_14_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Counter_0_5> synthesized.
+
+Synthesizing Unit <Counter_0_9_UR>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_UR.vhd".
+    Found 1-bit register for signal <C>.
+    Found 4-bit register for signal <counter>.
+    Found 4-bit adder for signal <counter[3]_GND_15_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_0_9_UR> synthesized.
+
+Synthesizing Unit <Counter_0_2_R>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_2_R.vhd".
+    Found 2-bit register for signal <counter>.
+    Found 2-bit adder for signal <counter[1]_GND_16_o_add_1_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_0_2_R> synthesized.
+
+Synthesizing Unit <Comparator_4Bit>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Comparator_4Bit.vhd".
+    Found 4-bit comparator equal for signal <R> created at line 41
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Comparator_4Bit> synthesized.
+
+Synthesizing Unit <Counter_0_9_U5>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_9_U5.vhd".
+    Found 1-bit register for signal <enableTempNot>.
+    Found 1-bit register for signal <enableTemp>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <Counter_0_9_U5> synthesized.
+
+Synthesizing Unit <Counter_0_4>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter_0_4.vhd".
+    Found 1-bit register for signal <C>.
+    Found 3-bit register for signal <counter>.
+    Found 3-bit adder for signal <counter[2]_GND_22_o_add_1_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Counter_0_4> synthesized.
+
+Synthesizing Unit <MUX4BIT_2_1>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\MUX4BIT_2_1.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4BIT_2_1> synthesized.
+
+Synthesizing Unit <Segment_Driver>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Segment_Driver.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Segment_Driver> synthesized.
+
+Synthesizing Unit <MUX4BIT_4_1>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\MUX4BIT_4_1.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <O> created at line 44.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX4BIT_4_1> synthesized.
+
+Synthesizing Unit <BCD_4_7Segment>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\BCD_4_7Segment.vhd".
+    Found 16x7-bit Read Only RAM for signal <temp>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD_4_7Segment> synthesized.
+
+Synthesizing Unit <Counter0_3>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\Counter0_3.vhd".
+    Found 2-bit register for signal <counter>.
+    Found finite state machine <FSM_0> for signal <counter>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Counter0_3> synthesized.
+
+Synthesizing Unit <BCD_2_4_Selector>.
+    Related source file is "C:\Users\Haruk\Documents\General Workspace\Xilinx\HWD_Watch\BCD_2_4_Selector.vhd".
+    Found 4x4-bit Read Only RAM for signal <O>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD_2_4_Selector> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 15
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 4
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 5
+# Registers                                            : 30
+ 1-bit register                                        : 15
+ 2-bit register                                        : 2
+ 3-bit register                                        : 4
+ 32-bit register                                       : 4
+ 4-bit register                                        : 5
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 15
+ 1-bit 2-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 9
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <BCD_2_4_Selector>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_O> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <I>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <O>             |          |
+    -----------------------------------------------------------------------
+Unit <BCD_2_4_Selector> synthesized (advanced).
+
+Synthesizing (advanced) Unit <BCD_4_7Segment>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_temp> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <DATA>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <temp>          |          |
+    -----------------------------------------------------------------------
+Unit <BCD_4_7Segment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_4>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_5>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_5> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_5_R>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_5_R> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_9_R>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_9_R> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_9_U>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_9_U> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_9_UR>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <Counter_0_9_UR> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DIV1000_2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DIV1000_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DIV10K_1000>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DIV10K_1000> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DIV20M_10K>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DIV20M_10K> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DIV2_1>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DIV2_1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 2
+# Counters                                             : 13
+ 3-bit up counter                                      : 4
+ 32-bit up counter                                     : 4
+ 4-bit up counter                                      : 5
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Comparators                                          : 6
+ 4-bit comparator equal                                : 6
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 6
+ 4-bit 4-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <SD/FSM_0> on signal <counter[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+
+Optimizing unit <main> ...
+
+Optimizing unit <Watch_Driver> ...
+
+Optimizing unit <Segment_Driver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 181
+ Flip-Flops                                            : 181
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 643
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 124
+#      LUT2                        : 151
+#      LUT3                        : 22
+#      LUT4                        : 16
+#      LUT5                        : 7
+#      LUT6                        : 53
+#      MUXCY                       : 124
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 181
+#      FD                          : 138
+#      FDC                         : 26
+#      FDR                         : 17
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 5
+#      OBUF                        : 13
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             181  out of  11440     1%  
+ Number of Slice LUTs:                  387  out of   5720     6%  
+    Number used as Logic:               387  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    387
+   Number with an unused Flip Flop:     206  out of    387    53%  
+   Number with an unused LUT:             0  out of    387     0%  
+   Number of fully used LUT-FF pairs:   181  out of    387    46%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    102    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------+---------------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)           | Load  |
+-----------------------------------------+---------------------------------+-------+
+WD/MIN1ST/C                              | NONE(WD/MIN10TH/counter_2)      | 4     |
+WD/AMIN1ST/C2/C                          | NONE(WD/AMIN10TH/counter_2)     | 4     |
+WD/MIN1ST/inpt(WD/MIN1ST/inpt1:O)        | NONE(*)(WD/MIN1ST/counter_3)    | 5     |
+WD/AMIN1ST/C2/inpt(WD/AMIN1ST/C2/inpt1:O)| NONE(*)(WD/AMIN1ST/C2/counter_3)| 5     |
+WD/SEC1ST/C                              | NONE(WD/SEC10TH/counter_2)      | 4     |
+WD/HOUR1ST/inpt(WD/HOUR1ST/inpt1:O)      | NONE(*)(WD/HOUR1ST/counter_3)   | 5     |
+IH/DIV4/tmp                              | NONE(WD/SEC1ST/counter_3)       | 5     |
+WD/AHOUR1ST/inpt(WD/AHOUR1ST/inpt1:O)    | NONE(*)(WD/AHOUR1ST/counter_3)  | 5     |
+WD/AMIN1ST/enable(WD/AMIN1ST/enable1:O)  | NONE(*)(WD/AMIN1ST/C1/counter_2)| 4     |
+WD/AHOUR1ST/C                            | NONE(WD/AHOUR10TH/counter_0)    | 2     |
+WD/HOUR1ST/C                             | NONE(WD/HOUR10TH/counter_0)     | 2     |
+WD/AMIN1ST/inpt(WD/AMIN1ST/inpt1:O)      | NONE(*)(WD/AMIN1ST/enableTemp)  | 2     |
+IH/DIV2/tmp                              | BUFG                            | 35    |
+CLK_pb123                                | BUFGP                           | 33    |
+IH/DIV1/tmp                              | BUFG                            | 33    |
+IH/DIV3/tmp                              | BUFG                            | 33    |
+-----------------------------------------+---------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.164ns (Maximum Frequency: 240.136MHz)
+   Minimum input arrival time before clock: 4.007ns
+   Maximum output required time after clock: 7.691ns
+   Maximum combinational path delay: 8.366ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/MIN1ST/C'
+  Clock period: 2.676ns (frequency: 373.678MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               2.676ns (Levels of Logic = 1)
+  Source:            WD/MIN10TH/counter_2 (FF)
+  Destination:       WD/MIN10TH/counter_2 (FF)
+  Source Clock:      WD/MIN1ST/C rising
+  Destination Clock: WD/MIN1ST/C rising
+
+  Data Path: WD/MIN10TH/counter_2 to WD/MIN10TH/counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   0.912  WD/MIN10TH/counter_2 (WD/MIN10TH/counter_2)
+     LUT3:I0->O            4   0.205   0.683  WD/MIN10TH/PWR_14_o_counter[2]_equal_1_o<2>1 (WD/MIN10TH/PWR_14_o_counter[2]_equal_1_o)
+     FDR:R                     0.430          WD/MIN10TH/counter_0
+    ----------------------------------------
+    Total                      2.676ns (1.082ns logic, 1.594ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/AMIN1ST/C2/C'
+  Clock period: 2.676ns (frequency: 373.678MHz)
+  Total number of paths / destination ports: 19 / 8
+-------------------------------------------------------------------------
+Delay:               2.676ns (Levels of Logic = 1)
+  Source:            WD/AMIN10TH/counter_2 (FF)
+  Destination:       WD/AMIN10TH/counter_2 (FF)
+  Source Clock:      WD/AMIN1ST/C2/C rising
+  Destination Clock: WD/AMIN1ST/C2/C rising
+
+  Data Path: WD/AMIN10TH/counter_2 to WD/AMIN10TH/counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   0.912  WD/AMIN10TH/counter_2 (WD/AMIN10TH/counter_2)
+     LUT3:I0->O            4   0.205   0.683  WD/AMIN10TH/PWR_14_o_counter[2]_equal_1_o<2>1 (WD/AMIN10TH/PWR_14_o_counter[2]_equal_1_o)
+     FDR:R                     0.430          WD/AMIN10TH/counter_0
+    ----------------------------------------
+    Total                      2.676ns (1.082ns logic, 1.594ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/MIN1ST/inpt'
+  Clock period: 2.739ns (frequency: 365.097MHz)
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Delay:               2.739ns (Levels of Logic = 1)
+  Source:            WD/MIN1ST/counter_2 (FF)
+  Destination:       WD/MIN1ST/counter_3 (FF)
+  Source Clock:      WD/MIN1ST/inpt rising
+  Destination Clock: WD/MIN1ST/inpt rising
+
+  Data Path: WD/MIN1ST/counter_2 to WD/MIN1ST/counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.447   0.943  WD/MIN1ST/counter_2 (WD/MIN1ST/counter_2)
+     LUT4:I1->O            5   0.205   0.714  WD/MIN1ST/PWR_13_o_counter[3]_equal_1_o<3>1 (WD/MIN1ST/PWR_13_o_counter[3]_equal_1_o)
+     FDR:R                     0.430          WD/MIN1ST/counter_0
+    ----------------------------------------
+    Total                      2.739ns (1.082ns logic, 1.657ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/AMIN1ST/C2/inpt'
+  Clock period: 2.739ns (frequency: 365.097MHz)
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Delay:               2.739ns (Levels of Logic = 1)
+  Source:            WD/AMIN1ST/C2/counter_2 (FF)
+  Destination:       WD/AMIN1ST/C2/counter_3 (FF)
+  Source Clock:      WD/AMIN1ST/C2/inpt rising
+  Destination Clock: WD/AMIN1ST/C2/inpt rising
+
+  Data Path: WD/AMIN1ST/C2/counter_2 to WD/AMIN1ST/C2/counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.447   0.943  WD/AMIN1ST/C2/counter_2 (WD/AMIN1ST/C2/counter_2)
+     LUT4:I1->O            5   0.205   0.714  WD/AMIN1ST/C2/PWR_13_o_counter[3]_equal_1_o<3>1 (WD/AMIN1ST/C2/PWR_13_o_counter[3]_equal_1_o)
+     FDR:R                     0.430          WD/AMIN1ST/C2/counter_0
+    ----------------------------------------
+    Total                      2.739ns (1.082ns logic, 1.657ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/SEC1ST/C'
+  Clock period: 2.048ns (frequency: 488.317MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.048ns (Levels of Logic = 1)
+  Source:            WD/SEC10TH/counter_0 (FF)
+  Destination:       WD/SEC10TH/counter_0 (FF)
+  Source Clock:      WD/SEC1ST/C rising
+  Destination Clock: WD/SEC1ST/C rising
+
+  Data Path: WD/SEC10TH/counter_0 to WD/SEC10TH/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.714  WD/SEC10TH/counter_0 (WD/SEC10TH/counter_0)
+     INV:I->O              1   0.206   0.579  WD/SEC10TH/Mcount_counter_xor<0>11_INV_0 (WD/SEC10TH/Mcount_counter)
+     FDC:D                     0.102          WD/SEC10TH/counter_0
+    ----------------------------------------
+    Total                      2.048ns (0.755ns logic, 1.293ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/HOUR1ST/inpt'
+  Clock period: 2.902ns (frequency: 344.566MHz)
+  Total number of paths / destination ports: 36 / 10
+-------------------------------------------------------------------------
+Delay:               2.902ns (Levels of Logic = 1)
+  Source:            WD/HOUR1ST/counter_0 (FF)
+  Destination:       WD/HOUR1ST/counter_3 (FF)
+  Source Clock:      WD/HOUR1ST/inpt rising
+  Destination Clock: WD/HOUR1ST/inpt rising
+
+  Data Path: WD/HOUR1ST/counter_0 to WD/HOUR1ST/counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.050  WD/HOUR1ST/counter_0 (WD/HOUR1ST/counter_0)
+     LUT5:I1->O            7   0.203   0.773  WD/HOURRESET1 (WD/HOURRESET)
+     FDC:CLR                   0.430          WD/HOUR1ST/C
+    ----------------------------------------
+    Total                      2.902ns (1.080ns logic, 1.822ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IH/DIV4/tmp'
+  Clock period: 2.078ns (frequency: 481.325MHz)
+  Total number of paths / destination ports: 16 / 5
+-------------------------------------------------------------------------
+Delay:               2.078ns (Levels of Logic = 1)
+  Source:            WD/SEC1ST/counter_0 (FF)
+  Destination:       WD/SEC1ST/counter_0 (FF)
+  Source Clock:      IH/DIV4/tmp rising
+  Destination Clock: IH/DIV4/tmp rising
+
+  Data Path: WD/SEC1ST/counter_0 to WD/SEC1ST/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.744  WD/SEC1ST/counter_0 (WD/SEC1ST/counter_0)
+     INV:I->O              1   0.206   0.579  WD/SEC1ST/Mcount_counter_xor<0>11_INV_0 (WD/SEC1ST/Mcount_counter)
+     FDC:D                     0.102          WD/SEC1ST/counter_0
+    ----------------------------------------
+    Total                      2.078ns (0.755ns logic, 1.323ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/AHOUR1ST/inpt'
+  Clock period: 2.902ns (frequency: 344.566MHz)
+  Total number of paths / destination ports: 36 / 10
+-------------------------------------------------------------------------
+Delay:               2.902ns (Levels of Logic = 1)
+  Source:            WD/AHOUR1ST/counter_0 (FF)
+  Destination:       WD/AHOUR1ST/counter_3 (FF)
+  Source Clock:      WD/AHOUR1ST/inpt rising
+  Destination Clock: WD/AHOUR1ST/inpt rising
+
+  Data Path: WD/AHOUR1ST/counter_0 to WD/AHOUR1ST/counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   1.050  WD/AHOUR1ST/counter_0 (WD/AHOUR1ST/counter_0)
+     LUT5:I1->O            7   0.203   0.773  WD/AHOURRESET1 (WD/AHOURRESET)
+     FDC:CLR                   0.430          WD/AHOUR1ST/C
+    ----------------------------------------
+    Total                      2.902ns (1.080ns logic, 1.822ns route)
+                                       (37.2% logic, 62.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/AMIN1ST/enable'
+  Clock period: 2.610ns (frequency: 383.171MHz)
+  Total number of paths / destination ports: 18 / 7
+-------------------------------------------------------------------------
+Delay:               2.610ns (Levels of Logic = 1)
+  Source:            WD/AMIN1ST/C1/counter_2 (FF)
+  Destination:       WD/AMIN1ST/C1/counter_2 (FF)
+  Source Clock:      WD/AMIN1ST/enable rising
+  Destination Clock: WD/AMIN1ST/enable rising
+
+  Data Path: WD/AMIN1ST/C1/counter_2 to WD/AMIN1ST/C1/counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.845  WD/AMIN1ST/C1/counter_2 (WD/AMIN1ST/C1/counter_2)
+     LUT3:I0->O            4   0.205   0.683  WD/AMIN1ST/C1/PWR_20_o_counter[2]_equal_1_o<2>1 (WD/AMIN1ST/C1/PWR_20_o_counter[2]_equal_1_o)
+     FDR:R                     0.430          WD/AMIN1ST/C1/counter_0
+    ----------------------------------------
+    Total                      2.610ns (1.082ns logic, 1.528ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/AHOUR1ST/C'
+  Clock period: 2.912ns (frequency: 343.448MHz)
+  Total number of paths / destination ports: 6 / 4
+-------------------------------------------------------------------------
+Delay:               2.912ns (Levels of Logic = 1)
+  Source:            WD/AHOUR10TH/counter_1 (FF)
+  Destination:       WD/AHOUR10TH/counter_0 (FF)
+  Source Clock:      WD/AHOUR1ST/C rising
+  Destination Clock: WD/AHOUR1ST/C rising
+
+  Data Path: WD/AHOUR10TH/counter_1 to WD/AHOUR10TH/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   1.059  WD/AHOUR10TH/counter_1 (WD/AHOUR10TH/counter_1)
+     LUT5:I0->O            7   0.203   0.773  WD/AHOURRESET1 (WD/AHOURRESET)
+     FDC:CLR                   0.430          WD/AHOUR10TH/counter_0
+    ----------------------------------------
+    Total                      2.912ns (1.080ns logic, 1.832ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'WD/HOUR1ST/C'
+  Clock period: 2.912ns (frequency: 343.448MHz)
+  Total number of paths / destination ports: 6 / 4
+-------------------------------------------------------------------------
+Delay:               2.912ns (Levels of Logic = 1)
+  Source:            WD/HOUR10TH/counter_1 (FF)
+  Destination:       WD/HOUR10TH/counter_0 (FF)
+  Source Clock:      WD/HOUR1ST/C rising
+  Destination Clock: WD/HOUR1ST/C rising
+
+  Data Path: WD/HOUR10TH/counter_1 to WD/HOUR10TH/counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   1.059  WD/HOUR10TH/counter_1 (WD/HOUR10TH/counter_1)
+     LUT5:I0->O            7   0.203   0.773  WD/HOURRESET1 (WD/HOURRESET)
+     FDC:CLR                   0.430          WD/HOUR10TH/counter_0
+    ----------------------------------------
+    Total                      2.912ns (1.080ns logic, 1.832ns route)
+                                       (37.1% logic, 62.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IH/DIV2/tmp'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1589 / 35
+-------------------------------------------------------------------------
+Delay:               4.164ns (Levels of Logic = 3)
+  Source:            IH/DIV3/count_25 (FF)
+  Destination:       IH/DIV3/count_1 (FF)
+  Source Clock:      IH/DIV2/tmp rising
+  Destination Clock: IH/DIV2/tmp rising
+
+  Data Path: IH/DIV3/count_25 to IH/DIV3/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  IH/DIV3/count_25 (IH/DIV3/count_25)
+     LUT6:I0->O            3   0.203   0.995  IH/DIV3/GND_7_o_count[31]_equal_2_o<31>5 (IH/DIV3/GND_7_o_count[31]_equal_2_o<31>4)
+     LUT6:I1->O           17   0.203   1.028  IH/DIV3/GND_7_o_count[31]_equal_2_o<31>7 (IH/DIV3/GND_7_o_count[31]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  IH/DIV3/count_0_rstpot (IH/DIV3/count_0_rstpot)
+     FD:D                      0.102          IH/DIV3/count_0
+    ----------------------------------------
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK_pb123'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1586 / 33
+-------------------------------------------------------------------------
+Delay:               4.164ns (Levels of Logic = 3)
+  Source:            IH/DIV1/count_25 (FF)
+  Destination:       IH/DIV1/count_0 (FF)
+  Source Clock:      CLK_pb123 rising
+  Destination Clock: CLK_pb123 rising
+
+  Data Path: IH/DIV1/count_25 to IH/DIV1/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  IH/DIV1/count_25 (IH/DIV1/count_25)
+     LUT6:I0->O            3   0.203   0.995  IH/DIV1/GND_5_o_count[31]_equal_2_o<31>5 (IH/DIV1/GND_5_o_count[31]_equal_2_o<31>4)
+     LUT6:I1->O           17   0.203   1.028  IH/DIV1/GND_5_o_count[31]_equal_2_o<31>7 (IH/DIV1/GND_5_o_count[31]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  IH/DIV1/count_0_rstpot (IH/DIV1/count_0_rstpot)
+     FD:D                      0.102          IH/DIV1/count_0
+    ----------------------------------------
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IH/DIV1/tmp'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1586 / 33
+-------------------------------------------------------------------------
+Delay:               4.164ns (Levels of Logic = 3)
+  Source:            IH/DIV2/count_25 (FF)
+  Destination:       IH/DIV2/count_0 (FF)
+  Source Clock:      IH/DIV1/tmp rising
+  Destination Clock: IH/DIV1/tmp rising
+
+  Data Path: IH/DIV2/count_25 to IH/DIV2/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  IH/DIV2/count_25 (IH/DIV2/count_25)
+     LUT6:I0->O            3   0.203   0.995  IH/DIV2/GND_6_o_count[31]_equal_2_o<31>5 (IH/DIV2/GND_6_o_count[31]_equal_2_o<31>4)
+     LUT6:I1->O           17   0.203   1.028  IH/DIV2/GND_6_o_count[31]_equal_2_o<31>7 (IH/DIV2/GND_6_o_count[31]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  IH/DIV2/count_0_rstpot (IH/DIV2/count_0_rstpot)
+     FD:D                      0.102          IH/DIV2/count_0
+    ----------------------------------------
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IH/DIV3/tmp'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1586 / 33
+-------------------------------------------------------------------------
+Delay:               4.164ns (Levels of Logic = 3)
+  Source:            IH/DIV4/count_25 (FF)
+  Destination:       IH/DIV4/count_0 (FF)
+  Source Clock:      IH/DIV3/tmp rising
+  Destination Clock: IH/DIV3/tmp rising
+
+  Data Path: IH/DIV4/count_25 to IH/DIV4/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  IH/DIV4/count_25 (IH/DIV4/count_25)
+     LUT6:I0->O            3   0.203   0.995  IH/DIV4/GND_8_o_count[31]_equal_2_o<31>5 (IH/DIV4/GND_8_o_count[31]_equal_2_o<31>4)
+     LUT6:I1->O           17   0.203   1.028  IH/DIV4/GND_8_o_count[31]_equal_2_o<31>7 (IH/DIV4/GND_8_o_count[31]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  IH/DIV4/count_0_rstpot (IH/DIV4/count_0_rstpot)
+     FD:D                      0.102          IH/DIV4/count_0
+    ----------------------------------------
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'WD/SEC1ST/C'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              4.007ns (Levels of Logic = 2)
+  Source:            ALARM_pb3_p47 (PAD)
+  Destination:       WD/SEC10TH/counter_2 (FF)
+  Destination Clock: WD/SEC1ST/C rising
+
+  Data Path: ALARM_pb3_p47 to WD/SEC10TH/counter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.321  ALARM_pb3_p47_IBUF (ALARM_pb3_p47_IBUF)
+     LUT3:I0->O            9   0.205   0.829  WD/SECRESET1 (WD/SECRESET)
+     FDC:CLR                   0.430          WD/SEC10TH/C
+    ----------------------------------------
+    Total                      4.007ns (1.857ns logic, 2.150ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'IH/DIV4/tmp'
+  Total number of paths / destination ports: 15 / 5
+-------------------------------------------------------------------------
+Offset:              4.007ns (Levels of Logic = 2)
+  Source:            ALARM_pb3_p47 (PAD)
+  Destination:       WD/SEC1ST/counter_3 (FF)
+  Destination Clock: IH/DIV4/tmp rising
+
+  Data Path: ALARM_pb3_p47 to WD/SEC1ST/counter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.321  ALARM_pb3_p47_IBUF (ALARM_pb3_p47_IBUF)
+     LUT3:I0->O            9   0.205   0.829  WD/SECRESET1 (WD/SECRESET)
+     FDC:CLR                   0.430          WD/SEC1ST/C
+    ----------------------------------------
+    Total                      4.007ns (1.857ns logic, 2.150ns route)
+                                       (46.3% logic, 53.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'WD/AMIN1ST/inpt'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.282ns (Levels of Logic = 2)
+  Source:            SNOOZE_pb1_p45 (PAD)
+  Destination:       WD/AMIN1ST/enableTemp (FF)
+  Destination Clock: WD/AMIN1ST/inpt rising
+
+  Data Path: SNOOZE_pb1_p45 to WD/AMIN1ST/enableTemp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  SNOOZE_pb1_p45_IBUF (SNOOZE_pb1_p45_IBUF)
+     LUT2:I0->O            1   0.203   0.000  WD/AMIN1STMUP51 (WD/AMIN1STMUP5)
+     FD:D                      0.102          WD/AMIN1ST/enableTemp
+    ----------------------------------------
+    Total                      2.282ns (1.527ns logic, 0.755ns route)
+                                       (66.9% logic, 33.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IH/DIV2/tmp'
+  Total number of paths / destination ports: 122 / 12
+-------------------------------------------------------------------------
+Offset:              7.691ns (Levels of Logic = 4)
+  Source:            SD/C1/counter_FSM_FFd1 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      IH/DIV2/tmp rising
+
+  Data Path: SD/C1/counter_FSM_FFd1 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              24   0.447   1.537  SD/C1/counter_FSM_FFd1 (SD/C1/counter_FSM_FFd1)
+     LUT6:I0->O            1   0.203   0.808  SD/MUX1/Mmux_O11 (SD/MUX1/Mmux_O1)
+     LUT6:I3->O            7   0.205   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      7.691ns (3.629ns logic, 4.062ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/HOUR1ST/C'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              6.831ns (Levels of Logic = 4)
+  Source:            WD/HOUR10TH/counter_0 (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      WD/HOUR1ST/C rising
+
+  Data Path: WD/HOUR10TH/counter_0 to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.912  WD/HOUR10TH/counter_0 (WD/HOUR10TH/counter_0)
+     LUT6:I3->O            1   0.205   0.924  WD/AMIN1STMUP534 (WD/AMIN1STMUP533)
+     LUT6:I1->O            4   0.203   0.788  WD/AMIN1STMUP535 (WDSNOOZE)
+     LUT2:I0->O            1   0.203   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      6.831ns (3.629ns logic, 3.202ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/AHOUR1ST/C'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              6.848ns (Levels of Logic = 4)
+  Source:            WD/AHOUR10TH/counter_0 (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      WD/AHOUR1ST/C rising
+
+  Data Path: WD/AHOUR10TH/counter_0 to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.931  WD/AHOUR10TH/counter_0 (WD/AHOUR10TH/counter_0)
+     LUT6:I2->O            1   0.203   0.924  WD/AMIN1STMUP534 (WD/AMIN1STMUP533)
+     LUT6:I1->O            4   0.203   0.788  WD/AMIN1STMUP535 (WDSNOOZE)
+     LUT2:I0->O            1   0.203   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      6.848ns (3.627ns logic, 3.221ns route)
+                                       (53.0% logic, 47.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/SEC1ST/C'
+  Total number of paths / destination ports: 21 / 7
+-------------------------------------------------------------------------
+Offset:              6.972ns (Levels of Logic = 4)
+  Source:            WD/SEC10TH/counter_0 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      WD/SEC1ST/C rising
+
+  Data Path: WD/SEC10TH/counter_0 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.943  WD/SEC10TH/counter_0 (WD/SEC10TH/counter_0)
+     LUT6:I3->O            1   0.205   0.684  SD/MUX1/Mmux_O12 (SD/MUX1/Mmux_O11)
+     LUT6:I4->O            7   0.203   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      6.972ns (3.629ns logic, 3.343ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/MIN1ST/C'
+  Total number of paths / destination ports: 24 / 8
+-------------------------------------------------------------------------
+Offset:              6.965ns (Levels of Logic = 4)
+  Source:            WD/MIN10TH/counter_2 (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      WD/MIN1ST/C rising
+
+  Data Path: WD/MIN10TH/counter_2 to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   1.028  WD/MIN10TH/counter_2 (WD/MIN10TH/counter_2)
+     LUT6:I1->O            1   0.203   0.944  WD/AMIN1STMUP533 (WD/AMIN1STMUP532)
+     LUT6:I0->O            4   0.203   0.788  WD/AMIN1STMUP535 (WDSNOOZE)
+     LUT2:I0->O            1   0.203   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      6.965ns (3.627ns logic, 3.338ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/AMIN1ST/C2/C'
+  Total number of paths / destination ports: 24 / 8
+-------------------------------------------------------------------------
+Offset:              6.985ns (Levels of Logic = 4)
+  Source:            WD/AMIN10TH/counter_2 (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      WD/AMIN1ST/C2/C rising
+
+  Data Path: WD/AMIN10TH/counter_2 to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   1.048  WD/AMIN10TH/counter_2 (WD/AMIN10TH/counter_2)
+     LUT6:I0->O            1   0.203   0.944  WD/AMIN1STMUP533 (WD/AMIN1STMUP532)
+     LUT6:I0->O            4   0.203   0.788  WD/AMIN1STMUP535 (WDSNOOZE)
+     LUT2:I0->O            1   0.203   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      6.985ns (3.627ns logic, 3.358ns route)
+                                       (51.9% logic, 48.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/HOUR1ST/inpt'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              7.174ns (Levels of Logic = 4)
+  Source:            WD/HOUR1ST/counter_0 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      WD/HOUR1ST/inpt rising
+
+  Data Path: WD/HOUR1ST/counter_0 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   0.907  WD/HOUR1ST/counter_0 (WD/HOUR1ST/counter_0)
+     LUT3:I1->O            1   0.203   0.924  SD/MUX1/Mmux_O13 (SD/MUX1/Mmux_O12)
+     LUT6:I1->O            7   0.203   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      7.174ns (3.627ns logic, 3.547ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/AHOUR1ST/inpt'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              7.072ns (Levels of Logic = 4)
+  Source:            WD/AHOUR1ST/counter_0 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      WD/AHOUR1ST/inpt rising
+
+  Data Path: WD/AHOUR1ST/counter_0 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.447   0.803  WD/AHOUR1ST/counter_0 (WD/AHOUR1ST/counter_0)
+     LUT3:I2->O            1   0.205   0.924  SD/MUX1/Mmux_O13 (SD/MUX1/Mmux_O12)
+     LUT6:I1->O            7   0.203   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      7.072ns (3.629ns logic, 3.443ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IH/DIV4/tmp'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.128ns (Levels of Logic = 4)
+  Source:            WD/SEC1ST/counter_0 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      IH/DIV4/tmp rising
+
+  Data Path: WD/SEC1ST/counter_0 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              6   0.447   0.973  WD/SEC1ST/counter_0 (WD/SEC1ST/counter_0)
+     LUT6:I3->O            1   0.205   0.808  SD/MUX1/Mmux_O11 (SD/MUX1/Mmux_O1)
+     LUT6:I3->O            7   0.205   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      7.128ns (3.631ns logic, 3.497ns route)
+                                       (50.9% logic, 49.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/MIN1ST/inpt'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              7.031ns (Levels of Logic = 4)
+  Source:            WD/MIN1ST/counter_0 (FF)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+  Source Clock:      WD/MIN1ST/inpt rising
+
+  Data Path: WD/MIN1ST/counter_0 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.878  WD/MIN1ST/counter_0 (WD/MIN1ST/counter_0)
+     LUT6:I4->O            1   0.203   0.808  SD/MUX1/Mmux_O11 (SD/MUX1/Mmux_O1)
+     LUT6:I3->O            7   0.205   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      7.031ns (3.629ns logic, 3.402ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'WD/AMIN1ST/C2/inpt'
+  Total number of paths / destination ports: 32 / 8
+-------------------------------------------------------------------------
+Offset:              6.929ns (Levels of Logic = 4)
+  Source:            WD/AMIN1ST/C2/counter_1 (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      WD/AMIN1ST/C2/inpt rising
+
+  Data Path: WD/AMIN1ST/C2/counter_1 to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.447   0.992  WD/AMIN1ST/C2/counter_1 (WD/AMIN1ST/C2/counter_1)
+     LUT6:I2->O            1   0.203   0.944  WD/AMIN1STMUP533 (WD/AMIN1STMUP532)
+     LUT6:I0->O            4   0.203   0.788  WD/AMIN1STMUP535 (WDSNOOZE)
+     LUT2:I0->O            1   0.203   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      6.929ns (3.627ns logic, 3.302ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IH/DIV3/tmp'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.604ns (Levels of Logic = 2)
+  Source:            IH/DIV4/tmp (FF)
+  Destination:       DOT_p26 (PAD)
+  Source Clock:      IH/DIV3/tmp rising
+
+  Data Path: IH/DIV4/tmp to DOT_p26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.447   0.803  IH/DIV4/tmp (IH/DIV4/tmp)
+     LUT6:I5->O            1   0.205   0.579  SD/Mmux_DOT11 (DOT_p26_OBUF)
+     OBUF:I->O                 2.571          DOT_p26_OBUF (DOT_p26)
+    ----------------------------------------
+    Total                      4.604ns (3.223ns logic, 1.381ns route)
+                                       (70.0% logic, 30.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK_pb123'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.517ns (Levels of Logic = 2)
+  Source:            IH/DIV1/tmp (FF)
+  Destination:       BUZZER_p83 (PAD)
+  Source Clock:      CLK_pb123 rising
+
+  Data Path: IH/DIV1/tmp to BUZZER_p83
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               5   0.447   0.715  IH/DIV1/tmp (IH/DIV1/tmp)
+     LUT2:I1->O            1   0.205   0.579  BUZZER_p831 (BUZZER_p83_OBUF)
+     OBUF:I->O                 2.571          BUZZER_p83_OBUF (BUZZER_p83)
+    ----------------------------------------
+    Total                      4.517ns (3.223ns logic, 1.294ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 157 / 8
+-------------------------------------------------------------------------
+Delay:               8.366ns (Levels of Logic = 5)
+  Source:            ALARM_pb3_p47 (PAD)
+  Destination:       DATA_a41b40c35d34f29g27<2> (PAD)
+
+  Data Path: ALARM_pb3_p47 to DATA_a41b40c35d34f29g27<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.437  ALARM_pb3_p47_IBUF (ALARM_pb3_p47_IBUF)
+     LUT6:I1->O            1   0.203   0.808  SD/MUX1/Mmux_O11 (SD/MUX1/Mmux_O1)
+     LUT6:I3->O            7   0.205   1.138  SD/MUX1/Mmux_O15 (SD/muxToBCD<0>)
+     LUT6:I0->O            1   0.203   0.579  SD/Mmux_DATA21 (DATA_a41b40c35d34f29g27_1_OBUF)
+     OBUF:I->O                 2.571          DATA_a41b40c35d34f29g27_1_OBUF (DATA_a41b40c35d34f29g27<1>)
+    ----------------------------------------
+    Total                      8.366ns (4.404ns logic, 3.962ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK_pb123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_pb123      |    4.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IH/DIV1/tmp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IH/DIV1/tmp    |    4.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IH/DIV2/tmp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IH/DIV2/tmp    |    4.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IH/DIV3/tmp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IH/DIV3/tmp    |    4.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock IH/DIV4/tmp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IH/DIV4/tmp    |    2.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AHOUR1ST/C
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+WD/AHOUR1ST/C   |    2.912|         |         |         |
+WD/AHOUR1ST/inpt|    2.902|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AHOUR1ST/inpt
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+WD/AHOUR1ST/C   |    2.912|         |         |         |
+WD/AHOUR1ST/inpt|    2.902|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AMIN1ST/C2/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/AMIN1ST/C2/C|    2.676|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AMIN1ST/C2/inpt
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+WD/AMIN1ST/C2/inpt|    2.739|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AMIN1ST/enable
+-----------------+---------+---------+---------+---------+
+                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------+---------+---------+---------+---------+
+WD/AMIN1ST/enable|    2.610|         |         |         |
+WD/AMIN1ST/inpt  |    1.456|         |         |         |
+-----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/AMIN1ST/inpt
+------------------+---------+---------+---------+---------+
+                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------+---------+---------+---------+---------+
+WD/AHOUR1ST/C     |    3.698|         |         |         |
+WD/AHOUR1ST/inpt  |    3.905|         |         |         |
+WD/AMIN1ST/C2/C   |    3.835|         |         |         |
+WD/AMIN1ST/C2/inpt|    3.779|         |         |         |
+WD/HOUR1ST/C      |    3.681|         |         |         |
+WD/HOUR1ST/inpt   |    3.885|         |         |         |
+WD/MIN1ST/C       |    3.815|         |         |         |
+WD/MIN1ST/inpt    |    3.762|         |         |         |
+------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/HOUR1ST/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/HOUR1ST/C   |    2.912|         |         |         |
+WD/HOUR1ST/inpt|    2.902|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/HOUR1ST/inpt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/HOUR1ST/C   |    2.912|         |         |         |
+WD/HOUR1ST/inpt|    2.902|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/MIN1ST/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/MIN1ST/C    |    2.676|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/MIN1ST/inpt
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/MIN1ST/inpt |    2.739|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock WD/SEC1ST/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+WD/SEC1ST/C    |    2.048|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.06 secs
+ 
+--> 
+
+Total memory usage is 4503804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

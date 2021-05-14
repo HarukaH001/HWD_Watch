@@ -1,0 +1,5 @@
+vhdl work "MUX4BIT_4_1.vhd"
+vhdl work "Counter0_3.vhd"
+vhdl work "BCD_4_7Segment.vhd"
+vhdl work "BCD_2_4_Selector.vhd"
+vhdl work "Segment_Driver.vhd"

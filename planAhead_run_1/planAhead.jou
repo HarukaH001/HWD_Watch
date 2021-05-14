@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri May 14 23:40:36 2021
+# Process ID: 20308
+# Log file: C:/Users/Haruk/Documents/General Workspace/Xilinx/HWD_Watch/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Haruk/Documents/General Workspace/Xilinx/HWD_Watch/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Haruk/Documents/General Workspace/Xilinx/HWD_Watch/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P47 [get_ports ALARM_pb3_p47]
+endgroup
+startgroup
+set_property package_pin P83 [get_ports BUZZER_p83]
+endgroup
+startgroup
+set_property package_pin P123 [get_ports CLK_pb123]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports DOT_p26]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports H_pb4_p48]
+endgroup
+startgroup
+set_property package_pin P51 [get_ports M_pb5_p51]
+endgroup
+startgroup
+set_property package_pin P55 [get_ports S_pb6_p55]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports SNOOZE_pb1_p45]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports {SEG_p30334344[3]}]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports {SEG_p30334344[2]}]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports {SEG_p30334344[1]}]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports {SEG_p30334344[0]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {DATA_a41b40c35d34f29g27[6]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {DATA_a41b40c35d34f29g27[5]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {DATA_a41b40c35d34f29g27[4]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {DATA_a41b40c35d34f29g27[3]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {DATA_a41b40c35d34f29g27[2]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {DATA_a41b40c35d34f29g27[1]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {DATA_a41b40c35d34f29g27[4]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {DATA_a41b40c35d34f29g27[3]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {DATA_a41b40c35d34f29g27[2]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {DATA_a41b40c35d34f29g27[1]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {DATA_a41b40c35d34f29g27[0]}]
+endgroup
+save_constraints

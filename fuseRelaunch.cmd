@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Haruk/Documents/General Workspace/Xilinx/HWD_Watch/Counter0_3_isim_beh.exe" -prj "C:/Users/Haruk/Documents/General Workspace/Xilinx/HWD_Watch/Counter0_3_beh.prj" "work.Counter0_3" 
