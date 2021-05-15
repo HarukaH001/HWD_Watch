@@ -88,7 +88,7 @@ architecture Behavioral of Watch_Driver is
 	component Counter_0_5
 		 Port ( CLK : in  STD_LOGIC;
 				  S : out  STD_LOGIC_VECTOR (3 downto 0);
-				  C : out  STD_LOGIC);
+				  C : inout  STD_LOGIC);
 	end component;
 	component Counter_0_5_R
 		 Port ( CLK : in  STD_LOGIC;

@@ -39,7 +39,7 @@ end Counter_0_5;
 architecture Behavioral of Counter_0_5 is
 	signal counter : integer range 0 to 5 := 0;
 begin
-	process(CLK)
+	process(CLK, C)
 	begin
 		if(rising_edge(CLK)) then
 			if(counter = 5) then

@@ -32,12 +32,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity main is
     Port	( CLK_pb123 : in std_logic;
 			  SNOOZE_pb1_p45 : in  STD_LOGIC;
-           ALARM_pb3_p47 : in  STD_LOGIC;
-           H_pb4_p48 : in  STD_LOGIC;
-           M_pb5_p51 : in  STD_LOGIC;
-           S_pb6_p55 : in  STD_LOGIC;
+           ALARM_pb6_p55 : in  STD_LOGIC;
+           H_pb3_p47 : in  STD_LOGIC;
+           M_pb4_p48 : in  STD_LOGIC;
+           S_pb5_p51 : in  STD_LOGIC;
 			  SEG_p30334344 : out std_logic_vector (3 downto 0);
-			  DATA_a41b40c35d34f29g27 : out std_logic_vector (6 downto 0);
+			  DATA_a41b40c35d34e32f29g27 : out std_logic_vector (6 downto 0);
 			  DOT_p26 : out std_logic;
 			  BUZZER_p83 : out std_logic);
 end main;
@@ -103,8 +103,8 @@ architecture Behavioral of main is
 	signal WDDO4_SDDI4				: 	std_logic_vector (3 downto 0) := "0000";
 begin
 IH : Input_Handler	port map (	SN => SNOOZE_pb1_p45,
-											H => H_pb4_p48,
-											M => M_pb5_p51,
+											H => H_pb3_p47,
+											M => M_pb4_p48,
 											CLK => CLK_pb123,
 											HMCLICK => IHHMCLICK_WDHM,
 											SNO => IHSNO_WDSNI,
@@ -113,8 +113,8 @@ IH : Input_Handler	port map (	SN => SNOOZE_pb1_p45,
 											WCLK => IHWCLK_WDCLK,
 											BCLK => IHBCLK_WDFASTCLK,
 											SCLK => IHSCLK_SDCLK);
-WD : Watch_Driver		port map (	SI => S_pb6_p55,
-											AI => ALARM_pb3_p47,
+WD : Watch_Driver		port map (	SI => S_pb5_p51,
+											AI => ALARM_pb6_p55,
 											HM => IHHMCLICK_WDHM,
 											SNI => IHSNO_WDSNI,
 											HI => IHHO_WDHI,
@@ -137,7 +137,7 @@ SD : Segment_Driver	port map (	DI1 => WDDO1_SDDI1,
 											DOTIN => WDDOT_SDDOTIN,
 											DOT => DOT_p26,
 											SEG => SEG_p30334344,
-											DATA => DATA_a41b40c35d34f29g27);
+											DATA => DATA_a41b40c35d34e32f29g27);
 BUZZER_p83 <= WDSNOOZE and IHBCLK_WDFASTCLK;
 end Behavioral;
 
